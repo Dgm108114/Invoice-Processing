@@ -1,0 +1,7 @@
+path: '/content/drive/MyDrive/Datasets/Yolov8n Column Classification 300 images' # dataset root dir
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 9
+names: ['Amount', 'Description', 'Item-Code', 'Number', 'Order-Date', 'Order-Number', 'Quantity', 'Reference', 'Unit-Cost']

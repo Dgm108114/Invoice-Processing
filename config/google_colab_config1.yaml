@@ -1,0 +1,7 @@
+path: '/content/drive/MyDrive/Dataset/Yolov8n for ParaTable 400 images' # dataset root dir
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['paragraph', 'table']

@@ -1,0 +1,18 @@
+model:
+  path: '../runs/detect/train3_e400/weights/best.pt'
+  class_names: ['IDV', 'NCB', 'company-name', 'customer-details', 'liability-damage', 'own-damage', 'policy-details', 'policy-vehicle-table', 'product-name', 'total-premium', 'vehicle-details', 'vehicle-table']
+  threshold: 0.5
+
+paths:
+  tesseract_cmd: 'C:/Program Files/Tesseract-OCR/tesseract.exe'
+  poppler_path: 'D:/poppler-24.02.0/Library/bin'
+  temp_dir: '../Result/temp'
+  ner_model: '../NER/model-best'
+
+paddleocr:
+  use_gpu: true
+  use_angle_cls: true
+  lang: 'en'
+  ocr_version: 'PP-OCRv4'
+  use_space_char: true
+  show_log: False
